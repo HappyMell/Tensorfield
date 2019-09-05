@@ -42,6 +42,9 @@ p {
         background-color: #93cb52;
         border-radius: 5px;
         cursor: pointer; }
+      #navbar ul li a.active {
+        background-color: #93cb52;
+        border-radius: 5px; }
 
 /*Showcase*/
 #showcase {

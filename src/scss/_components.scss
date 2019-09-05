@@ -34,6 +34,11 @@
         border-radius: 5px;
         cursor: pointer;
       }
+
+      &.active {
+        background-color: $color-primary;
+        border-radius: 5px;
+      }
     }
   }
 }

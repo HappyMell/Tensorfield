@@ -26,9 +26,9 @@ class Navbar extends Component {
     return (
       <nav style={{ opacity: this.state.opacity }} id='navbar'>
         <div className='logo'>
-          <a href=''>
+          <Link to='home' spy={true} smooth={true} offset={-70} duration={800}>
             <img src={logo} />
-          </a>
+          </Link>
         </div>
 
         <ul>
