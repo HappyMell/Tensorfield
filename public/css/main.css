@@ -217,7 +217,6 @@ p {
 
 @media (max-width: 500px) {
   #navbar {
-    display: flex;
     flex-direction: column;
     align-items: center; }
     #navbar .logo {
