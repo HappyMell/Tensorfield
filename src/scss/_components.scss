@@ -1,0 +1,153 @@
+/* Navbar*/
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: $color-grey;
+  color: $color-white;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 0.5rem;
+
+  & .logo {
+    & img {
+      width: 50%;
+    }
+
+    & .logo-text {
+      grid-template-rows: 1fr;
+      & .name {
+        font-size: 2rem;
+      }
+    }
+  }
+  & ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    & li a {
+      color: $color-white;
+      padding: 0.75rem;
+      margin: 0 0.25rem;
+      &:hover {
+        background-color: $color-primary;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+/*Showcase*/
+
+#showcase {
+  background: $color-grey url("../img/header.png") no-repeat center center/cover;
+  height: 100vh;
+  color: $color-white;
+
+  & .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    /* Overlay*/
+    position: absolute;
+    top: 65px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+#how .items {
+  display: flex;
+  padding: 1rem;
+
+  & .item {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+
+    & i {
+      background-color: $color-primary;
+      padding: 1rem;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+#faq {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  & .faq-img {
+    background: url("../img/machine.png") no-repeat center center/cover;
+  }
+
+  & .faq-text {
+    background: url("../img/background.png") no-repeat center center/cover;
+  }
+}
+
+#news {
+  background: url("../img/newsbackground.png") no-repeat center center/cover;
+
+  & h2 {
+    color: #fff;
+  }
+
+  & .items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3.5rem;
+
+    & .item {
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(122, 181, 54, 0.57);
+      color: #fff;
+      & a {
+        color: #fff;
+
+        &:hover {
+          color: #333;
+        }
+      }
+      & img {
+        padding: 1rem;
+        margin-bottom: 1rem;
+        width: 90%;
+      }
+    }
+  }
+}
+
+/*Section Clients*/
+
+#clients .items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  & img {
+    display: block;
+    margin: auto;
+    width: 60%;
+  }
+}
+
+#main-footer {
+  background: url("../img/background.png") no-repeat center center/cover;
+
+  & .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    & .text {
+      padding: 0rem 8rem 1rem;
+    }
+  }
+}

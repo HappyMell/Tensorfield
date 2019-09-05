@@ -1,0 +1,78 @@
+@media (max-width: 768px) {
+  #showcase {
+    height: 50vh;
+
+    & .showcase-content {
+      margin-top: -2rem;
+      top: -7px;
+
+      & .l-heading {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  #news .items .item img {
+    margin-bottom: 0rem;
+    padding: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+
+    & .logo {
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+
+    & ul {
+      padding: 0.5rem;
+    }
+  }
+
+  #showcase .showcase-content {
+    margin-top: -2rem;
+    top: -35px;
+
+    & .l-heading {
+      font-size: 2rem;
+    }
+  }
+
+  #how .items {
+    display: grid;
+  }
+
+  #faq {
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+  }
+
+  #news {
+    & .m-heading {
+      font-size: 1.5rem;
+    }
+    & .items {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  #clients .items img {
+    width: 80%;
+  }
+
+  #main-footer {
+    & .text {
+      padding: 1rem 1rem 1rem;
+      font-size: 0.6rem;
+    }
+
+    & .info {
+      padding-top: 1rem;
+      font-size: 0.6rem;
+    }
+  }
+}
