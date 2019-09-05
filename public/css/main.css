@@ -121,7 +121,7 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr; }
     #main-footer .container .text {
-      padding: 0rem 8rem 1rem; }
+      padding: 0rem 4rem 1rem; }
 
 .container {
   max-width: 1100px;
