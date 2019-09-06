@@ -14,6 +14,66 @@ a {
 p {
   margin: 0.75rem 0; }
 
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 40px;
+  top: 22px; }
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #93cb52; }
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #7ab436; }
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px; }
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7; }
+
+/*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  top: 0; }
+
+/* General sidebar styles */
+.bm-menu {
+  background: #333;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  -webkit-box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.55);
+  box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.55); }
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47; }
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em; }
+
+/* Individual item */
+.bm-item {
+  display: inline-block; }
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3); }
+
 /* Navbar*/
 #navbar {
   display: flex;
@@ -22,7 +82,7 @@ p {
   background-color: #333;
   color: #fff;
   justify-content: space-between;
-  z-index: 1;
+  z-index: 2000;
   padding: 0.5rem; }
   #navbar .logo img {
     width: 50%; }
@@ -33,14 +93,19 @@ p {
   #navbar ul {
     display: flex;
     align-items: center;
-    list-style: none; }
+    list-style: none;
+    line-height: 48px; }
     #navbar ul li a {
       color: #fff;
       padding: 0.75rem;
       margin: 0 0.25rem; }
+      #navbar ul li a:hover {
+        cursor: pointer; }
       #navbar ul li a.active {
         background-color: #93cb52;
         border-radius: 5px; }
+  #navbar .contact p {
+    font-size: 0.8rem; }
 
 /*Showcase*/
 #showcase {
@@ -84,7 +149,8 @@ p {
     background: url("../img/background.png") no-repeat center center/cover; }
 
 #news {
-  background: url("../img/newsbackground.png") no-repeat center center/cover; }
+  background: url("../img/newsbackground.png") no-repeat center center/cover;
+  padding: 4rem; }
   #news h2 {
     color: #fff; }
   #news .items {
@@ -224,6 +290,9 @@ p {
       text-align: center; }
     #navbar ul {
       padding: 0.5rem; }
+  .bm-burger-button {
+    width: 30px;
+    height: 22px; }
   #showcase .showcase-content {
     margin-top: -2rem;
     top: -35px; }
@@ -234,10 +303,12 @@ p {
   #faq {
     display: grid;
     grid-template-columns: 0fr 1fr; }
-  #news .m-heading {
-    font-size: 1.5rem; }
-  #news .items {
-    grid-template-columns: 1fr; }
+  #news {
+    padding: 1rem; }
+    #news .m-heading {
+      font-size: 1.5rem; }
+    #news .items {
+      grid-template-columns: 1fr; }
   #clients .items img {
     width: 80%; }
   #main-footer .container .text {

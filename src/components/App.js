@@ -17,7 +17,6 @@ class App extends Component {
         <Faq />
         <News />
         <Clients />
-        <Footer />
       </div>
     );
   }
