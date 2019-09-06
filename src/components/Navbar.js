@@ -10,13 +10,6 @@ class Navbar extends Component {
     };
   }
 
-  scrollToBottom = () => {
-    scroll.scrollToBottom();
-    this.setState({
-      activeClass: "active"
-    });
-  };
-
   handleScrollEvent = e => {
     if (window.scrollY > 400) {
       this.setState({ opacity: 0.8 });
@@ -27,7 +20,6 @@ class Navbar extends Component {
 
   componentDidMount() {
     window.addEventListener("scroll", this.handleScrollEvent);
-    window.addEventListener("click", this.scrollToBottom);
   }
 
   render() {
@@ -44,7 +36,7 @@ class Navbar extends Component {
           <li>
             <Link
               activeClass='active'
-              to='showcase-content'
+              to='showcase'
               spy={true}
               smooth={true}
               offset={-80}
