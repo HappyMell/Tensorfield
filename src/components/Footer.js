@@ -4,7 +4,7 @@ class Footer extends Component {
   render() {
     return (
       <footer id='main-footer' className='bg-dark text-center py-1'>
-        <div className='container'>
+        <div id='footer' className='container'>
           <div className='text'>
             <p>
               Tensorfield Agriculture is building the next generation of
