@@ -74,7 +74,7 @@ class Navbar extends Component {
               offset={-70}
               duration={800}
             >
-              FAQ
+              FAQs
             </Link>
           </li>
           <li>
